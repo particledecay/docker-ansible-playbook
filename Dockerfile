@@ -11,6 +11,7 @@ RUN apk update && \
       jq \
       openssh-client \
       py3-pip \
+      sshpass \
       tar
 
 RUN apk add --no-cache --virtual .build-deps \
