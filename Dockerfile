@@ -16,6 +16,9 @@ RUN apk update && \
 
 RUN apk add --no-cache --virtual .build-deps \
       build-base \
+      dbus-dev \
+      dbus-glib \
+      dbus-glib-dev \
       gcc \
       libc-dev \
       libxml2-dev \
