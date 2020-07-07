@@ -30,7 +30,7 @@ RUN apk add --no-cache --virtual .build-deps \
     && python3 -m pip install --no-cache-dir -r /app/requirements.txt \
     && apk del .build-deps
 
-RUN curl -o /tmp/packer.zip https://releases.hashcorp.com/packer/1.5.4/packer_1.5.4_linux_amd64.zip \
+RUN curl -o /tmp/packer.zip https://releases.hashicorp.com/packer/1.5.4/packer_1.5.4_linux_amd64.zip \
     && unzip /tmp/packer.zip -d /usr/local/bin/
 
 WORKDIR /app
